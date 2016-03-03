@@ -21,7 +21,7 @@ was preinstalled, so just working from there:
     $ gem install rdiscount
 
     # Build and serve the website
-    # jekyll serve
+    $ jekyll serve
 
     # Browse to (by default) `localhost:4000` in a web browser
 
