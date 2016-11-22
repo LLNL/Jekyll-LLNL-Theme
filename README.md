@@ -24,8 +24,22 @@ was preinstalled, so just working from there:
     $ jekyll serve
 
     # Browse to (by default) `localhost:4000` in a web browser
+    $ open localhost:4000
 
 For more information, check out the full documentation at: http://jekyllrb.com/
+
+## Quickstart -- Bundler
+
+Using [Bundler](https://bundler.io):
+
+    # Install the dependencies
+    $ bundle Install
+
+    # Build and serve the website
+    $ bundle exec jekyll serve
+
+    # Browse to (by default) `localhost:4000` in a web browser
+    $ open localhost:4000
 
 ## Release
 
