@@ -14,10 +14,10 @@
 
     <div id="siteNavbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right navbar-collapse">
-        {% if page.title == "Home" %} <li class="active"> {% else %} <li> {% endif %}
+        {% if page.path == "index.md" %} <li class="active"> {% else %} <li> {% endif %}
           <a href="{{ site.baseurl }}/">Home</a></li>
         {% for node in site.pages reversed %}
-          {% unless node.title == "Home" %}
+          {% unless node.path == "index.md" %}
             {% if node.url == page.url %} <li class="active"> {% else %} <li> {% endif %}
               <a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
           {% endunless %}
