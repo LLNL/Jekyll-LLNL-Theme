@@ -1,7 +1,10 @@
-name: "Jekyll-LLNL-Theme"
+name: "LLNL Theme for Jekyll"
 author: "Ian Lee <lee1001@llnl.gov>"
 description: "LLNL Jekyll Template"
 
-url: "http://localhost:4000"
+# Correct linking GitHub Project pages
+# Note leading slash in baseurl
+githubrepo: Jekyll-LLNL-Theme
+baseurl: /Jekyll-LLNL-Theme
 
 permalink: pretty
