@@ -24,6 +24,38 @@ Or install it yourself as:
 
     $ gem install jekyll-llnl-theme
 
+## Usage
+
+This theme supports multiple page websites.
+Any page which is located at `/`, such as `/about.md`, will be added to the navigation bar at the top.
+Each page should include the following YAML front matter:
+
+```yaml
+---
+layout: default
+title: Title of the Page
+---
+```
+
+Currently, there is only the `default` layout.
+
+### Adding a Blog
+
+In true Jekyll fashion, a blog can be created by adding a `_posts/` directory.
+See the [Jekyll Documentation](https://jekyllrb.com/docs/posts/) for details on formatting blog entries.
+
+The following code is an example of how to create a list of blog entries:
+
+```html
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+```
+
 ## Development
 
 ### With Ruby Gems
