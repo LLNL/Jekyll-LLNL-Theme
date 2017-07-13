@@ -1,24 +1,38 @@
-Basic Template for Jekyll formatted for the Laboratory
-======================================================
+# LLNL Theme for Jekyll Websites
 
-Author: Ian Lee <lee1001@llnl.gov>
+Author: Ian Lee <lee1001@llnl.gov> and Elsa Gonsiorowski <gonsie@llnl.gov>
 
-## Setup / History
+## Installation
 
-This branch is the upstream branch of the Jekyll LLNL Theme. This template can
-be updated by rebasing (or merging) the changes from upstream at:
-https://mystash.llnl.gov/projects/LWDS/repos/jekyll-llnl-theme/browse
+Add this line to you Jekyll site's `Gemfile`:
 
-This uses Jekyll to build static HTML based on Markdown text files.
+```ruby
+gem "jekyll-llnl-theme"
+```
 
-## Quickstart
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: jekyll-llnl-theme
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install jekyll-llnl-theme
+
+## Development
+
+### With Ruby Gems
 
 Assuming working on OS X, tested on OS X 10.11.2. `gem` (Ruby package manager)
 was preinstalled, so just working from there:
 
     # Install the dependencies:
     $ gem install jekyll
-    $ gem install rdiscount
 
     # Build and serve the website
     $ jekyll serve --baseurl=''
@@ -28,7 +42,7 @@ was preinstalled, so just working from there:
 
 For more information, check out the full documentation at: http://jekyllrb.com/
 
-## Quickstart -- Bundler
+### With Bundler
 
 Using [Bundler](https://bundler.io):
 
@@ -40,6 +54,11 @@ Using [Bundler](https://bundler.io):
 
     # Browse to (by default) `localhost:4000` in a web browser
     $ open localhost:4000
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/llnl/jekyll-llnl-theme.
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [LLNL Contributing Guide](https://github.com/LLNL/open-source-guidelines/blob/master/CONTRIBUTING.md) code of conduct.
 
 ## Release
 
