@@ -31,6 +31,7 @@ Or install it yourself as:
 Assuming working on OS X, tested on OS X 10.11.2. `gem` (Ruby package manager)
 was preinstalled, so just working from there:
 
+```shell
     # Install the dependencies:
     $ gem install jekyll
 
@@ -39,6 +40,7 @@ was preinstalled, so just working from there:
 
     # Browse to (by default) `localhost:4000` in a web browser
     $ open localhost:4000
+```
 
 For more information, check out the full documentation at: http://jekyllrb.com/
 
@@ -46,6 +48,7 @@ For more information, check out the full documentation at: http://jekyllrb.com/
 
 Using [Bundler](https://bundler.io):
 
+```shell
     # Install the dependencies
     $ bundle Install
 
@@ -54,6 +57,7 @@ Using [Bundler](https://bundler.io):
 
     # Browse to (by default) `localhost:4000` in a web browser
     $ open localhost:4000
+```
 
 ## Contributing
 
