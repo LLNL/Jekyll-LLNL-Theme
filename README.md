@@ -13,7 +13,7 @@ gem "jekyll-llnl-theme"
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-llnl-theme
+remote_theme: llnl/jekyll-llnl-theme
 ```
 
 And then execute:
