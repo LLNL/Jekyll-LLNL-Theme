@@ -4,7 +4,11 @@ Author: Ian Lee <lee1001@llnl.gov> and Elsa Gonsiorowski <gonsie@llnl.gov>
 
 ## Installation
 
-Add this line to you Jekyll site's `Gemfile`:
+This gem can be used in two ways: either as a gem-based theme or through GitHub pages remote theme support (details [here](https://github.com/blog/2464-use-any-theme-with-github-pages)).
+
+### Gem-Base Theme
+
+Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
 gem "jekyll-llnl-theme"
@@ -13,7 +17,7 @@ gem "jekyll-llnl-theme"
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-remote_theme: llnl/jekyll-llnl-theme
+theme: jekyll-llnl-theme
 ```
 
 And then execute:
@@ -23,6 +27,23 @@ And then execute:
 Or install it yourself as:
 
     $ gem install jekyll-llnl-theme
+
+### GitHub Pages Remote Theme
+
+This is a recent addition to GitHub pages and is simple to use.
+Add this line to your site's `Gemfile`:
+
+``` ruby
+gem "github-pages", group :jekyll_plugins
+```
+
+And add this line to your site's `_config.yml`:
+
+``` yaml
+remote_theme: LLNL/Jekyll-LLNL-Theme
+```
+
+It is unclear if the remote theme is suitable for local development, but it will work on deployed sites.
 
 ## Usage
 
