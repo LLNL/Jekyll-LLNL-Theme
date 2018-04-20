@@ -22,11 +22,15 @@ theme: jekyll-llnl-theme
 
 And then execute:
 
-    $ bundle
+```shell
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install jekyll-llnl-theme
+```shell
+$ gem install jekyll-llnl-theme
+```
 
 ### GitHub Pages Remote Theme
 
@@ -85,14 +89,14 @@ Assuming working on OS X, tested on OS X 10.11.2. `gem` (Ruby package manager)
 was preinstalled, so just working from there:
 
 ```shell
-    # Install the dependencies:
-    $ gem install jekyll
+# Install the dependencies:
+$ gem install jekyll
 
-    # Build and serve the website
-    $ jekyll serve --baseurl=''
+# Build and serve the website
+$ jekyll serve --baseurl=''
 
-    # Browse to (by default) `localhost:4000` in a web browser
-    $ open localhost:4000
+# Browse to (by default) `localhost:4000` in a web browser
+$ open localhost:4000
 ```
 
 For more information, check out the full documentation at: http://jekyllrb.com/
@@ -102,14 +106,14 @@ For more information, check out the full documentation at: http://jekyllrb.com/
 Using [Bundler](https://bundler.io):
 
 ```shell
-    # Install the dependencies
-    $ bundle Install
+# Install the dependencies
+$ bundle Install
 
-    # Build and serve the website
-    $ bundle exec jekyll serve --baseurl=''
+# Build and serve the website
+$ bundle exec jekyll serve --baseurl=''
 
-    # Browse to (by default) `localhost:4000` in a web browser
-    $ open localhost:4000
+# Browse to (by default) `localhost:4000` in a web browser
+$ open localhost:4000
 ```
 
 ## Contributing
