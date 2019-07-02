@@ -8,3 +8,6 @@ githubrepo: Jekyll-LLNL-Theme
 baseurl: /Jekyll-LLNL-Theme
 
 permalink: pretty
+
+kramdown:
+  auto_ids: true
