@@ -1,30 +1,423 @@
-<nav id="header-slim" class="navbar navbar-default">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
 
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#siteNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
 
-      <p id="llnl-menu-tab" class="pull-left"><a href="https://www.llnl.gov"></a></p>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <header class="navbar navbar-default navbar-fixed-top" id="navbar" role="banner">
+        <div id="llnl-menu" >
+        <div class="container">
+            <ul class="llnl-nav">
+                <li><a href="https://www.llnl.gov/missions">Missions</a></li>
+                <li><a href="https://st.llnl.gov/">Research</a></li>
+                <li><a href="https://www.llnl.gov/doing-business">Doing Business</a></li>
+                <li><a href="https://www.llnl.gov/news">News</a></li>
+                <li><a href="https://www.llnl.gov/about">About</a></li>
+                <li><a href="https://careers.llnl.gov/">Careers</a></li>
+                <li><a href="https://www.llnl.gov/community">Community</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div id="siteNavbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right navbar-collapse">
-        {% if page.path == "index.md" %} <li class="active"> {% else %} <li> {% endif %}
-          <a href="{{ site.baseurl }}/">Home</a></li>
-        {% for node in site.pages reversed %}
-          {% unless node.path == "index.md" %}
-            {% if node.url == page.url %} <li class="active"> {% else %} <li> {% endif %}
-              <a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
-          {% endunless %}
-        {% endfor %}
-        <li id="github"><a href="https://github.com/llnl/{{ site.githubrepo }}"><span class="fa fa-github fa-lg"></span></a></li>
-      </ul>
-    </div>
+        <div class="container menu-wrap">
+
+        <div class="llnl-logo-wrap">
+            <div id="llnl-logo">
+                <a href="https://www.llnl.gov"><img src="/themes/custom/sienna/assets/images/llnl-logo.png" alt="LLNL Logo" /></a>
+            </div>
+        </div>
+        <div class="nav-wrap">
+
+            <div class="navbar-header">
+                  <div class="region region-navigation">
+    <nav role="navigation" aria-labelledby="block-primary-menu-menu" id="block-primary-menu" data-block-plugin-id="menu_block:main">
+
+  <h2 class="visually-hidden" id="block-primary-menu-menu">Primary Menu</h2>
+
+
+
+      <ul class="menu menu--main nav navbar-nav">
+
+                    <li class="expanded dropdown">
+        <a href="/missions" aria-label="Missions - Main Nav" id="Missions-mainnav">Missions </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="/missions/biosecurity" aria-label="Biosecurity - Main Nav" id="Biosecurity-mainnav" data-drupal-link-system-path="node/566">Biosecurity</a>
+                  </li>
+
+                    <li>
+        <a href="/missions/counterterrorism" aria-label="Counterterrorism - Main Nav" id="Counterterrorism-mainnav" data-drupal-link-system-path="node/561">Counterterrorism</a>
+                  </li>
+
+                    <li>
+        <a href="/missions/defense" aria-label="Defense - Main Nav" id="Defense-mainnav" data-drupal-link-system-path="node/556">Defense</a>
+                  </li>
+
+                    <li>
+        <a href="/missions/energy" aria-label="Energy - Main Nav" id="Energy-mainnav" data-drupal-link-system-path="node/551">Energy</a>
+                  </li>
+
+                    <li>
+        <a href="/missions/intelligence" aria-label="Intelligence - Main Nav" id="Intelligence-mainnav" data-drupal-link-system-path="node/546">Intelligence</a>
+                  </li>
+
+                    <li>
+        <a href="/missions/nonproliferation" aria-label="Nonproliferation - Main Nav" id="Nonproliferation-mainnav" data-drupal-link-system-path="node/541">Nonproliferation</a>
+                  </li>
+
+                    <li>
+        <a href="/missions/science" aria-label="Science - Main Nav" id="Science-mainnav" data-drupal-link-system-path="node/536">Science</a>
+                  </li>
+
+                    <li>
+        <a href="/missions/weapons" aria-label="Weapons - Main Nav" id="Weapons-mainnav" data-drupal-link-system-path="node/531">Weapons</a>
+                  </li>
+        </ul>
+
+            </li>
+
+                    <li class="expanded dropdown">
+        <a href="https://st.llnl.gov" aria-label="Science &amp; Technology - Main Nav" id="Science_&amp;_Technology-mainnav">Science &amp; Technology </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="https://st.llnl.gov/research" aria-label="Research - Main Nav" id="Research-mainnav">Research</a>
+                  </li>
+
+                    <li>
+        <a href="https://st.llnl.gov/news-center" aria-label="S&amp;T News - Main Nav" id="S&amp;T_News-mainnav">S&amp;T News</a>
+                  </li>
+
+                    <li>
+        <a href="https://st.llnl.gov/partnerships" aria-label="Partnerships - Main Nav" id="Partnerships-mainnav">Partnerships</a>
+                  </li>
+
+                    <li>
+        <a href="https://st.llnl.gov/opportunities" aria-label="Opportunities - Main Nav" id="Opportunities-mainnav">Opportunities</a>
+                  </li>
+        </ul>
+
+            </li>
+
+                    <li class="expanded dropdown">
+        <a href="/programs" aria-label="Programs - Main Nav" id="Programs-mainnav">Programs </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="https://www-gs.llnl.gov/" aria-label="Global Security - Main Nav" id="Global_Security-mainnav">Global Security</a>
+                  </li>
+
+                    <li>
+        <a href="https://lasers.llnl.gov/" aria-label="NIF &amp; Photon Science - Main Nav" id="NIF_&amp;_Photon_Science-mainnav">NIF &amp; Photon Science</a>
+                  </li>
+
+                    <li>
+        <a href="https://wci.llnl.gov/" aria-label="Weapons &amp; Complex Integration - Main Nav" id="Weapons_&amp;_Complex_Integration-mainnav">Weapons &amp; Complex Integration</a>
+                  </li>
+
+                    <li>
+        <a href="https://computing.llnl.gov/" aria-label="Computing - Main Nav" id="Computing-mainnav">Computing</a>
+                  </li>
+
+                    <li>
+        <a href="https://engineering.llnl.gov/" aria-label="Engineering - Main Nav" id="Engineering-mainnav">Engineering</a>
+                  </li>
+
+                    <li>
+        <a href="https://pls.llnl.gov/" aria-label="Physical and Life Sciences - Main Nav" id="Physical_and_Life_Sciences-mainnav">Physical and Life Sciences</a>
+                  </li>
+        </ul>
+
+            </li>
+
+                    <li class="expanded dropdown">
+        <a href="/doing-business" aria-label="Doing Business - Main Nav" id="Doing_Business-mainnav">Doing Business </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="/doing-business/economic-impact" aria-label="Economic Impact - Main Nav" id="Economic_Impact-mainnav" data-drupal-link-system-path="node/736">Economic Impact</a>
+                  </li>
+
+                    <li>
+        <a href="http://hpcinnovationcenter.llnl.gov/" aria-label="HPC Innovation Center - Main Nav" id="HPC_Innovation_Center-mainnav">HPC Innovation Center</a>
+                  </li>
+
+                    <li>
+        <a href="https://lvoc.org/" aria-label="Open Campus - Main Nav" id="Open_Campus-mainnav">Open Campus</a>
+                  </li>
+
+                    <li>
+        <a href="https://ipo.llnl.gov/" aria-label="Industrial Partnerships - Main Nav" id="Industrial_Partnerships-mainnav">Industrial Partnerships</a>
+                  </li>
+
+                    <li>
+        <a href="https://supplychain.llnl.gov/" aria-label="Supplier Resources - Main Nav" id="Supplier_Resources-mainnav">Supplier Resources</a>
+                  </li>
+        </ul>
+
+            </li>
+
+                    <li class="expanded dropdown">
+        <a href="/news" aria-label="News - Main Nav" id="News-mainnav">News </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="/news/media-contacts" aria-label="Media Contacts - Main Nav" id="Media_Contacts-mainnav" data-drupal-link-system-path="node/756">Media Contacts</a>
+                  </li>
+
+                    <li>
+        <a href="/news/media-library" aria-label="Media Library - Main Nav" id="Media_Library-mainnav" data-drupal-link-system-path="node/666">Media Library</a>
+                  </li>
+
+                    <li>
+        <a href="/news/publications" aria-label="Publications - Main Nav" id="Publications-mainnav" data-drupal-link-system-path="node/576">Publications</a>
+                  </li>
+
+                    <li>
+        <a href="/news/lab-report" aria-label="Lab Report - Main Nav" id="Lab_Report-mainnav" data-drupal-link-system-path="node/37616">Lab Report</a>
+                  </li>
+
+                    <li>
+        <a href="/news/releases" aria-label="News Index - Main Nav" id="News_Index-mainnav" data-drupal-link-system-path="node/38696">News Index</a>
+                  </li>
+        </ul>
+
+            </li>
+
+                    <li class="expanded dropdown">
+        <a href="/about" aria-label="About - Main Nav" id="About-mainnav">About </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="/about/organization" aria-label="Organization - Main Nav" id="Organization-mainnav" data-drupal-link-system-path="node/701">Organization</a>
+                  </li>
+
+                    <li>
+        <a href="/about/management-sponsors" aria-label="Management and Sponsors - Main Nav" id="Management_and_Sponsors-mainnav" data-drupal-link-system-path="node/726">Management and Sponsors</a>
+                  </li>
+
+                    <li>
+        <a href="/about/history" aria-label="History - Main Nav" id="History-mainnav" data-drupal-link-system-path="node/721">History</a>
+                  </li>
+
+                    <li>
+        <a href="/about/visiting" aria-label="Visiting - Main Nav" id="Visiting-mainnav" data-drupal-link-system-path="node/711">Visiting</a>
+                  </li>
+
+                    <li>
+        <a href="/about/directions" aria-label="Directions - Main Nav" id="Directions-mainnav" data-drupal-link-system-path="node/661">Directions</a>
+                  </li>
+
+                    <li>
+        <a href="/about/protocol-special-events" aria-label="Protocol and Special Events - Main Nav" id="Protocol_and_Special_Events-mainnav" data-drupal-link-system-path="node/71">Protocol and Special Events</a>
+                  </li>
+
+                    <li>
+        <a href="/about/contact" aria-label="Contact - Main Nav" id="Contact-mainnav" data-drupal-link-system-path="node/751">Contact</a>
+                  </li>
+        </ul>
+
+            </li>
+
+                    <li class="expanded dropdown">
+        <a href="/join-our-team" aria-label="Join Our Team - Main Nav" id="Join_Our_Team-mainnav">Join Our Team </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="/join-our-team/careers" aria-label="Careers - Main Nav" id="Careers-mainnav" data-drupal-link-system-path="node/40596">Careers</a>
+                  </li>
+
+                    <li>
+        <a href="/join-our-team/culture" aria-label="Culture - Main Nav" id="Culture-mainnav" data-drupal-link-system-path="node/40566">Culture</a>
+                  </li>
+
+                    <li>
+        <a href="/diversity" aria-label="Diversity - Main Nav" id="Diversity-mainnav" data-drupal-link-system-path="node/39671">Diversity</a>
+                  </li>
+        </ul>
+
+            </li>
+
+                    <li class="expanded dropdown">
+        <a href="/community" aria-label="Community - Main Nav" id="Community-mainnav">Community </a>
+                          <ul class="dropdown-menu">
+
+                    <li>
+        <a href="/community/discovery-center" aria-label="Discovery Center - Main Nav" id="Discovery_Center-mainnav" data-drupal-link-system-path="node/676">Discovery Center</a>
+                  </li>
+
+                    <li>
+        <a href="/community/community-giving" aria-label="Community Giving - Main Nav" id="Community_Giving-mainnav" data-drupal-link-system-path="node/746">Community Giving</a>
+                  </li>
+
+                    <li>
+        <a href="https://education.llnl.gov/" aria-label="Science Education - Main Nav" id="Science_Education-mainnav">Science Education</a>
+                  </li>
+
+                    <li>
+        <a href="https://enviroinfo.llnl.gov/" aria-label="Environment, Safety, and Health - Main Nav" id="Environment,_Safety,_and_Health-mainnav">Environment, Safety, and Health</a>
+                  </li>
+
+                    <li>
+        <a href="/community/site-wide-environmental-impact-statement-sweis" title="Site Wide Environmental Impact Statement" aria-label="SWEIS - Main Nav" id="SWEIS-mainnav" data-drupal-link-system-path="node/39261">SWEIS</a>
+                  </li>
+
+                    <li>
+        <a href="/community/retiree-and-employee-resources" aria-label="Retiree and Employee Resources - Main Nav" id="Retiree_and_Employee_Resources-mainnav" data-drupal-link-system-path="node/581">Retiree and Employee Resources</a>
+                  </li>
+
+                    <li>
+        <a href="/community/tours" aria-label="Tours - Main Nav" id="Tours-mainnav" data-drupal-link-system-path="node/771">Tours</a>
+                  </li>
+        </ul>
+
+            </li>
+        </ul>
+
+
+  </nav>
 
   </div>
-</nav>
+
+
+                <div class="block-llnl-search-mobile hidden-sm hidden-md hidden-lg">
+                    <section data-drupal-selector="llnl-header-search-form-2" data-block-plugin-id="header_search_block" class="block block-llnl-search block-header-search-block clearfix">
+
+
+
+      <form action="/llnl_search" method="post" id="llnl-header-search-form--2" accept-charset="UTF-8">
+  <div class="search-form">
+    <div id="edit-description--2" class="form-item js-form-item form-type-item js-form-type-item form-item-description js-form-item-description form-no-label form-group">
+
+
+
+
+
+
+  </div>
+<div class="form-group form-group-search has-feedback"><div class="sr-only">Search</div><div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-googlesearchterm js-form-item-googlesearchterm form-no-label form-group">
+
+
+  <input aria-label="Search" title="Search" data-drupal-selector="edit-googlesearchterm" class="form-text form-control" type="text" id="edit-googlesearchterm--2" name="googlesearchterm" value="" size="60" maxlength="128" />
+
+
+
+  </div>
+<span class="glyphicon glyphicon-search form-control-feedback"></span></div><input data-drupal-selector="edit-searchspace" type="hidden" name="searchspace" value="site" /><button class="block-btn button js-form-submit form-submit btn-primary btn icon-before" data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Search"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+Search</button><input autocomplete="off" data-drupal-selector="form-wcif80i1p7hjs8wa4amdhb9fum5h1ht6gkl4dzgmg0y" type="hidden" name="form_build_id" value="form-wcIf80I1p7HJs8wa4aMdhb9FUm5H1Ht6gkl4dZGmG0Y" /><input data-drupal-selector="edit-llnl-header-search-form-2" type="hidden" name="form_id" value="llnl_header_search_form" />
+</div>
+</form>
+
+  </section>
+
+
+                </div>
+
+                <section id="block-responsivemenumobileicon" data-block-plugin-id="responsive_menu_toggle" class="responsive-menu-toggle-wrapper responsive-menu-toggle block block-responsive-menu block-responsive-menu-toggle clearfix">
+                    <a id="toggle-icon" class="toggle responsive-menu-toggle-icon" title="Menu" href="#off-canvas">
+                    <span class="icon"></span>
+                </a>
+                </section>
+                            </div>
+
+                                        <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <div id="search-button">
+                        <section data-drupal-selector="llnl-header-search-form-2" data-block-plugin-id="header_search_block" class="block block-llnl-search block-header-search-block clearfix">
+
+
+
+      <form action="/llnl_search" method="post" id="llnl-header-search-form--2" accept-charset="UTF-8">
+  <div class="search-form">
+    <div id="edit-description--2" class="form-item js-form-item form-type-item js-form-type-item form-item-description js-form-item-description form-no-label form-group">
+
+
+
+
+
+
+  </div>
+<div class="form-group form-group-search has-feedback"><div class="sr-only">Search</div><div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-googlesearchterm js-form-item-googlesearchterm form-no-label form-group">
+
+
+  <input aria-label="Search" title="Search" data-drupal-selector="edit-googlesearchterm" class="form-text form-control" type="text" id="edit-googlesearchterm--2" name="googlesearchterm" value="" size="60" maxlength="128" />
+
+
+
+  </div>
+<span class="glyphicon glyphicon-search form-control-feedback"></span></div><input data-drupal-selector="edit-searchspace" type="hidden" name="searchspace" value="site" /><button class="block-btn button js-form-submit form-submit btn-primary btn icon-before" data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Search"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+Search</button><input autocomplete="off" data-drupal-selector="form-wcif80i1p7hjs8wa4amdhb9fum5h1ht6gkl4dzgmg0y" type="hidden" name="form_build_id" value="form-wcIf80I1p7HJs8wa4aMdhb9FUm5H1Ht6gkl4dZGmG0Y" /><input data-drupal-selector="edit-llnl-header-search-form-2" type="hidden" name="form_id" value="llnl_header_search_form" />
+</div>
+</form>
+
+  </section>
+
+
+                    </div>
+                      <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mobile-menu-menu" id="block-mobile-menu" data-block-plugin-id="menu_block:main">
+
+  <h2 class="visually-hidden" id="block-mobile-menu-menu">Mobile Menu</h2>
+
+
+        <div class="panel panel-default">
+	<div class="content panel-body">
+		<h5>Site Menu</h5>
+
+      <ul class="menu menu--mobile nav navbar-nav">
+			                    <li>
+        <a href="/missions" aria-label="Missions - Mobile Nav" data-drupal-link-system-path="node/571">Missions</a>
+                  </li>
+                        <li>
+        <a href="https://st.llnl.gov" aria-label="Science &amp; Technology - Mobile Nav">Science &amp; Technology</a>
+                  </li>
+                        <li>
+        <a href="/programs" aria-label="Programs - Mobile Nav" data-drupal-link-system-path="node/21">Programs</a>
+                  </li>
+                        <li>
+        <a href="/doing-business" aria-label="Doing Business - Mobile Nav" data-drupal-link-system-path="node/651">Doing Business</a>
+                  </li>
+                        <li>
+        <a href="/news" aria-label="News - Mobile Nav" data-drupal-link-system-path="node/9886">News</a>
+                  </li>
+                        <li>
+        <a href="/about" aria-label="About - Mobile Nav" data-drupal-link-system-path="node/681">About</a>
+                  </li>
+                        <li>
+        <a href="/join-our-team" aria-label="Join Our Team - Mobile Nav" data-drupal-link-system-path="node/40586">Join Our Team</a>
+                  </li>
+                        <li>
+        <a href="/community" aria-label="Community - Mobile Nav" data-drupal-link-system-path="node/586">Community</a>
+                  </li>
+    		</ul>
+
+
+
+	<div id="llnl-mobile-menu" >
+		<h5>LLNL Menu</h5>
+		<ul>
+			<li><a href="https://www.llnl.gov/missions">Missions</a></li>
+			<li><a href="https://st.llnl.gov/">Research</a></li>
+			<li><a href="https://www.llnl.gov/doing-business">Doing Business</a></li>
+			<li><a href="https://www.llnl.gov/news">News</a></li>
+			<li><a href="https://www.llnl.gov/about">About</a></li>
+			<li><a href="https://careers.llnl.gov/">Careers</a></li>
+			<li><a href="https://www.llnl.gov/community">Community</a></li>
+		</ul>
+	</div>
+
+	</div>
+</div>
+
+  </nav>
+
+  </div>
+
+                </div>
+                                </div>
+
+            </div>
+
+
+</header>
